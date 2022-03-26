@@ -1,0 +1,122 @@
+#container {}
+
+#header {display: block;}
+
+#headerMain {height: 100px;display: flex;justify-content: space-evenly;}
+
+#webSiteAmblem {
+  background-image: url("icons/kitapsepeti.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 240px;
+  cursor: pointer;
+}
+
+#searchIcon {
+  background-image: url("icons/searchicon.png");
+  height: 22px;
+  width: 22px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+  left: -25px;
+  cursor: pointer;
+}
+
+#otherIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+}
+
+#myAccounts, #myFavoriteList, #myChart {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center;
+  position: relative;
+  height: 35px;
+  width: 50px;
+  cursor: pointer;
+}
+
+#searchBox input {
+  height: 30px;
+  width: 350px;
+  border: 2px solid;
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #333;
+  background-color: #f3f3f3;
+}
+
+#searchBoxContent {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 35px;}
+
+#searchBox {
+  display: flex;
+  align-items: center;
+}
+
+#otherIcons p {
+  font-size: 12px;
+  padding-top: 6px;
+  font-weight: 900;
+}
+
+#myAccounts {
+  background-image: url("icons/account.png");
+}
+
+#myFavoriteList {
+  background-image: url("icons/favorite.png");
+}
+
+#myChart {
+  background-image: url("icons/chart.png");
+}
+
+#headerList li{
+  list-style-type: none;
+  display: contents;
+}
+
+#headerList li a{
+  font-family: source_sans_prosemibold,serif !important;
+  color: #333;
+  font-size: 14px;
+  line-height: 34px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: 0.18px;
+}
+
+#headerList ul{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#headerList nav{width: 1250px;}
+
+#headerList
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    border: none !important;
+    border-bottom: 1px solid #e8e8e8 !important;
+    height: 34px;
+    position: relative;
+    z-index: 900;
+}

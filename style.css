@@ -1,13 +1,19 @@
 #container {}
 
-#header {display: block;}
+#header {
+  display: block;
+}
 
-#headerMain {height: 100px;display: flex;justify-content: space-evenly;}
+#headerMain {
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
 
 #webSiteAmblem {
-  background-image: url("icons/kitapsepeti.png");
+  background-image: url("icons/kitapsepeti_2.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   background-size: 100%;
   width: 240px;
   cursor: pointer;
@@ -35,7 +41,7 @@
   display: block;
   background-repeat: no-repeat;
   background-size: 80%;
-  background-position: center;
+  background-position: center center;
   position: relative;
   height: 35px;
   width: 50px;
@@ -48,15 +54,16 @@
   border: 2px solid;
   border-radius: 6px;
   box-sizing: border-box;
-  color: #333;
-  background-color: #f3f3f3;
+  color: rgb(51, 51, 51);
+  background-color: rgb(243, 243, 243);
 }
 
 #searchBoxContent {
   display: flex;
   align-items: center;
   width: 350px;
-  height: 35px;}
+  height: 35px;
+}
 
 #searchBox {
   display: flex;
@@ -81,42 +88,125 @@
   background-image: url("icons/chart.png");
 }
 
-#headerList li{
+#headerList li {
   list-style-type: none;
   display: contents;
 }
 
-#headerList li a{
-  font-family: source_sans_prosemibold,serif !important;
-  color: #333;
+#headerList li a {
+  color: rgb(51, 51, 51);
   font-size: 14px;
   line-height: 34px;
-  padding: 0;
+  padding: 0px;
   display: block;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   box-sizing: border-box;
   letter-spacing: 0.18px;
+  font-family: source_sans_prosemibold, serif !important;
 }
 
-#headerList ul{
+#headerList ul {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-#headerList nav{width: 1250px;}
+#headerList nav {
+  width: 75%;
+}
 
-#headerList
+#headerList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 34px;
+  position: relative;
+  z-index: 900;
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-image: initial !important;
+  border-bottom: 1px solid rgb(232, 232, 232) !important;
+}
+
+.child {
+  height: 350px;
+  width: 300px;
+  margin: 5px;
+  display: block;
+}
+
+#detail {}
+
+#detailMain {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#detailMain img {
+  height: 90%;
+  width: 100%;
+}
+
+#detail button {
+  border-radius: 10px;
+  border-color: grey;
+  background-color: white;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 grey;
+  cursor: pointer;
+
+  width: 75px;
+  height: 30px;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.categoryHeader {
+  cursor: pointer;
+}
+
+.price {
+
+  width: 50px;
+  height: 25px;
+  pointer-events: none;
+text-align: end;}
+
+.buttonGroup {
+  border: 2px;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#loader {
+  margin: auto;
+  border: 20px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 20px solid black;
+  width: 200px;
+  height: 200px;
+  animation: spinner 2s linear infinite;
+  position: flex;
+  display: flex;
+}
+
+@keyframes spinner {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loaderMain
 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #fff;
-    border: none !important;
-    border-bottom: 1px solid #e8e8e8 !important;
-    height: 34px;
-    position: relative;
-    z-index: 900;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  display: inline-grid;
 }

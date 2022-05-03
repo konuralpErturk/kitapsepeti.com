@@ -23,6 +23,14 @@
                 </div>
                 <div id="otherIcons" class="headerMainClass">
                     <div id="myAccounts" >
+                        <div id="accountPopup" class="popup">
+                            <div id="signIn" class="loginButtons">
+                                <span id="signInSpan" class="loginSpans">Üye Ol</span>
+                            </div>
+                            <div id="join" class="loginButtons">
+                                <span id="joinSpan" class="loginSpans">Giriş Yap</span>
+                            </div>
+                        </div>
                     </div>
                     <p>Hesabım</p>
                     <div id="myFavoriteList">
@@ -148,6 +156,17 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div id="popupMain" class="popup">
+        <div id="popupHeader" class="popup">
+            <span id="popupHeaderSpan" class="popup">
+
+            </span>
+        </div>
+        <div id="popupDetail" class="popup">
+        </div>
+        <button id="closeButton" onclick="closePopup()" class="popup">Kapat</button>
+        <button id="clearButton" onclick="clearList()" class="popup">Temizle</button>
     </div>
 </body>
 <script src="script.js"></script>

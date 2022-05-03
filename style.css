@@ -1,3 +1,5 @@
+body {}
+
 #container {}
 
 #header {
@@ -43,7 +45,7 @@
   background-size: 80%;
   background-position: center center;
   position: relative;
-  height: 35px;
+  height: 40px;
   width: 50px;
   cursor: pointer;
 }
@@ -157,9 +159,8 @@
   background-color: white;
   text-align: center;
   color: black;
-  text-shadow: 0 0 grey;
+  text-shadow: grey 0px 0px;
   cursor: pointer;
-
   width: 75px;
   height: 30px;
   font-size: 7px;
@@ -171,15 +172,14 @@
 }
 
 .price {
-
   width: 50px;
   height: 25px;
   pointer-events: none;
-text-align: end;}
+  text-align: end;
+}
 
 .buttonGroup {
-  border: 2px;
-  border-style: solid;
+  border: 2px solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -187,26 +187,161 @@ text-align: end;}
 
 #loader {
   margin: auto;
-  border: 20px solid #EAF0F6;
+  border-width: 20px;
+  border-style: solid;
+  border-color: black rgb(234, 240, 246) rgb(234, 240, 246);
+  border-image: initial;
   border-radius: 50%;
-  border-top: 20px solid black;
   width: 200px;
   height: 200px;
-  animation: spinner 2s linear infinite;
-  position: flex;
+  animation: 2s linear 0s infinite normal none running spinner;
   display: flex;
 }
 
 @keyframes spinner {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-#loaderMain
-{
+#loaderMain {
   height: 100%;
   width: 100%;
   position: fixed;
   align-items: center;
   display: inline-grid;
 }
+
+#popupMain {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  margin-top: -15%;
+  margin-left: -12%;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+#accountPopup {
+  position: absolute;
+  top: 34px;
+  left: 6px;
+  background-color: black;
+  z-index: 999;
+  Overflow: hidden;
+}
+
+#closeButton {
+
+  width: 75px;
+  height: 25px;
+  position: absolute;
+  top: 95%;
+  left: 85%;  
+}
+
+#clearButton {
+
+  width: 75px;
+  height: 25px;
+  position: absolute;
+  top: 95%;
+  left: 70%;
+}
+
+#popupHeaderSpan {
+
+  font-size: 40px;
+  font-family: serif;
+}
+
+#popupHeader {
+  display: flex;
+  opacity: 0.9;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid;
+}
+
+.accountPopupOpen {
+  position: relative;
+  animation-name: accountPopupOpenAnimate;
+  animation-duration: 1s;
+}
+
+@keyframes accountPopupOpenAnimate {
+  0% {
+    background-color: black;
+    width: 90px;
+    height: 0px;
+  }
+
+  100% {
+    background-color: black;
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.accountPopupClose {
+  position: relative;
+  animation-name: accountPopupCloseAnimate;
+  animation-duration: 1s;
+}
+
+@keyframes accountPopupCloseAnimate {
+  0% {
+    background-color: black;
+    width: 90px;
+    height: 90px;
+  }
+
+  100% {
+    background-color: black;
+    width: 90px;
+    height: 0px;
+  }
+}
+
+.loginButtons {
+  border: 1px solid white;
+  border-radius: 12px;
+  background-color: white;
+  width: 88px;
+  height: 25px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+#signInSpan {
+  position: relative;
+}
+
+#loginSpan {}
+
+.loginSpans 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table {
+  display: block; /* important */
+  height: 300px;
+  overflow-y: scroll;
+}
+
+
+body :not(.popup) {}

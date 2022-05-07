@@ -7,11 +7,14 @@ let noval              = [{"bookId":"1","bookName":"origin","bookType":"Noval","
 let science            = [{"bookId":"1","bookName":"thinking fast and slow","bookType":"Science","bookUrl":"booksPic/science/61fdrEuPJwL.png","bookPrice":"40"},{"bookId":"2","bookName":"gift of fear","bookType":"Science","bookUrl":"booksPic/science/61P3Dq33sxL.png","bookPrice":"45"},{"bookId":"3","bookName":"quiet","bookType":"Science","bookUrl":"booksPic/science/71K8Ji-Dt2L.png","bookPrice":"20"},{"bookId":"4","bookName":"crystals for beginners","bookType":"Science","bookUrl":"booksPic/science/81CMKSCOz7L.png","bookPrice":"30"},{"bookId":"5","bookName":"the healing garden","bookType":"Science","bookUrl":"booksPic/science/81ekHWX54yL.png","bookPrice":"20"},{"bookId":"6","bookName":"the war on the west","bookType":"Science","bookUrl":"booksPic/science/81GY-i6D1FL.png","bookPrice":"15"},{"bookId":"7","bookName":"floriography","bookType":"Science","bookUrl":"booksPic/science/81LcCQJJGuL.png","bookPrice":"10"},{"bookId":"8","bookName":"poison","bookType":"Science","bookUrl":"booksPic/science/81w4i4QZrGL.png","bookPrice":"25"}]
 let history            = [{"bookId":"1","bookName":"master manipulator","bookType":"History","bookUrl":"booksPic/vaccianed/71pDh5ItViL.png","bookPrice":"40"},{"bookId":"2","bookName":"herbal antibiotics and antivirals","bookType":"History","bookUrl":"booksPic/vaccianed/71SGL1CXToL.png","bookPrice":"45"},{"bookId":"3","bookName":"on immunity an inoculation","bookType":"History","bookUrl":"booksPic/vaccianed/71-Ta5BIwoL.png","bookPrice":"20"},{"bookId":"4","bookName":"herbal antibiotics","bookType":"History","bookUrl":"booksPic/vaccianed/81a2L9U52HL.png","bookPrice":"30"},{"bookId":"5","bookName":"pandemia","bookType":"History","bookUrl":"booksPic/vaccianed/81BTJMC2IPL.png","bookPrice":"20"},{"bookId":"6","bookName":"herbal medic","bookType":"History","bookUrl":"booksPic/vaccianed/91r-b7xd5zL.png","bookPrice":"15"},{"bookId":"7","bookName":"pandora's lab","bookType":"History","bookUrl":"booksPic/vaccianed/711KDFNXEgL.png","bookPrice":"10"},{"bookId":"8","bookName":"vaccine epidemic","bookType":"History","bookUrl":"booksPic/vaccianed/7134-1ZTB-L.png","bookPrice":"25"}]
 let currentPopupName   = "";
-let millisecondsToWait = 1000;
 let bookData           = [];
 let chartList          = [];
 let favoriteList       = [];
 let rapidList          = [];
+
+import {MongoClient} from "mongodb";
+
+var mongo = require('C:\Users\Konuralp\node_modules\mongodb');
 
 var popup = document.getElementById('popupMain');
 

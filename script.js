@@ -12,10 +12,6 @@ let chartList          = [];
 let favoriteList       = [];
 let rapidList          = [];
 
-import {MongoClient} from "mongodb";
-
-var mongo = require('C:\Users\Konuralp\node_modules\mongodb');
-
 var popup = document.getElementById('popupMain');
 
 popup.style.visibility = "hidden";
@@ -269,7 +265,7 @@ function createTable() {
     body.appendChild(table);
     table = $('#detailTable');
     var row = $('<tr></tr>');
-    row.append($('<th>'+"Kitap Linki"+'</th>'));
+    row.append($('<th>'+"Kitap Resmi"+'</th>'));
     row.append($('<th>'+"Kitap Adı"+'</th>'));
     row.append($('<th>'+"Kitap Tipi"+'</th>'));
     row.append($('<th>'+"Kitap Tutarı"+'</th>'));
